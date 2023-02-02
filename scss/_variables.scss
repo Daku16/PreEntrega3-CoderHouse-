@@ -1,0 +1,31 @@
+$color-principal1: #49c5f6;
+$color-principal2: #ff2aef;
+$color-texto: #4e4376;
+
+@mixin formateo-texto {
+    font-size: 1.9rem;
+    color: $color-texto;
+}
+@mixin formateo-texto-sm{
+    font-size: 1.7rem;
+}
+@mixin formateo-global {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: linear-gradient(to right bottom, $color-principal1, $color-principal2);
+    }
+    img{
+        max-width: 100%;
+    }
+}

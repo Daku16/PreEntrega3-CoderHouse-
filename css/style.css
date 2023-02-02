@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #49c5f6, #ff2aef);
+}
+
+img {
+  max-width: 100%;
+}
+
+#home__cabecera {
+  margin: 1rem 0;
+  min-width: 100%;
+  min-height: 10vh;
+  justify-items: center;
+}
+#home__cabecera .div__logo .logo {
+  display: inline-block;
+  height: 6rem;
+}
+#home__cabecera .div__logo .logo img {
+  width: 10rem;
+}
+#home__cabecera .nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+#home__cabecera .nav ul li {
+  list-style: none;
+  transition: 0.5s;
+}
+#home__cabecera .nav ul li:hover {
+  border-bottom: solid 0.05rem #49c5f6;
+  transform: translateY(-0.5rem);
+  transition: 0.7s;
+}
+#home__cabecera .nav ul li a {
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: #4e4376;
+}
+#home__cabecera .nav ul li a:hover {
+  color: #ff2aef;
+  text-shadow: 0.5rem 0.5rem 1rem #49c5f6;
+}
+
+.activo {
+  padding: 0.5rem;
+  border-bottom: solid 0.05rem #49c5f6;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 1rem #49c5f6;
+}
+.activo a {
+  color: #ff2aef;
+}
+
+#home__main {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  background: linear-gradient(to bottom, #2b5876 30%, #4e4376 80%);
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1.5rem #49c5f6, -1rem -1rem 1.5rem #ff2aef, inset 1rem 1rem 1.5rem #49c5f6, inset -1rem -1rem 1.5rem #ff2aef;
+}
+#home__main div h1 {
+  color: #49c5f6;
+  animation: fadeIn;
+  animation-duration: 5s;
+  text-shadow: 0.5rem 0.5rem 0.5rem #49c5f6;
+  font-size: 4rem;
+}
+#home__main div h2 {
+  font-size: 2.5rem;
+  color: #ff2aef;
+  animation: subtitle;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+@keyframes subtitle {
+  0% {
+    text-shadow: 0 0 0.5rem #ff2aef;
+  }
+  50% {
+    text-shadow: 0 0 1rem #ff2aef;
+  }
+  100% {
+    text-shadow: 0 0 0.5rem #ff2aef;
+  }
+}
+#home__main div img {
+  border-bottom: solid #49c5f6 0.1rem;
+  border-left: solid #49c5f6 0.1rem;
+  padding: 0.5rem;
+}
+
+#home__footer {
+  display: flex;
+  margin-top: auto;
+  min-height: 5vh;
+  justify-content: space-around;
+  align-items: center;
+}
+#home__footer p {
+  margin: 0;
+}
+#home__footer .icon {
+  color: #4e4376;
+}
+
+@media screen and (min-width: 576px) and (max-width: 640px) {
+  #home__cabecera .nav ul li a {
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
