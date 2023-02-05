@@ -50,14 +50,8 @@
     }
 }
 
-#home__main{
-    min-height: 80vh;
-    position: relative;
-    display: flex;
-    background: linear-gradient(to bottom, #2b5876 30%, #4e4376 80%);
-    flex-direction: column;
-    border-radius: 2rem;
-    box-shadow: 1rem 1rem 1.5rem $color-principal1,  -1rem -1rem 1.5rem $color-principal2, inset 1rem 1rem 1.5rem $color-principal1, inset  -1rem -1rem 1.5rem $color-principal2;
+#main{
+    @include main;
     div{
         h1{
             color: $color-principal1;
@@ -85,7 +79,7 @@
             }
         }
     }
-    div{
+    .contenedor__logo{
         img{
             border-bottom: solid $color-principal1 .1rem;
             border-left: solid $color-principal1 .1rem;
@@ -97,6 +91,7 @@
 #home__footer{
     display: flex;
     margin-top: auto;
+    padding: 3rem 0;
     min-height: 5vh;
     justify-content: space-around;
     align-items: center;
@@ -107,7 +102,7 @@
         color: $color-texto;
     }
 }
-@media screen and (min-width: 576px) and (max-width: 640px){
+@media screen and (min-width: 576px) and (max-width: 657px){
     #home__cabecera{
         .nav{
             ul{

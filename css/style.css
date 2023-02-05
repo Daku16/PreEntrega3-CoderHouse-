@@ -15,6 +15,20 @@ body {
   min-height: 100vh;
   background: linear-gradient(to right bottom, #49c5f6, #ff2aef);
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #49c5f6, #ff2aef);
+}
+body::-webkit-scrollbar-track:hover, body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ff2aef;
+  border-radius: 20px;
+  border: solid 0.1rem white;
+}
 
 img {
   max-width: 100%;
@@ -68,7 +82,7 @@ img {
   color: #ff2aef;
 }
 
-#home__main {
+#main {
   min-height: 80vh;
   position: relative;
   display: flex;
@@ -77,14 +91,14 @@ img {
   border-radius: 2rem;
   box-shadow: 1rem 1rem 1.5rem #49c5f6, -1rem -1rem 1.5rem #ff2aef, inset 1rem 1rem 1.5rem #49c5f6, inset -1rem -1rem 1.5rem #ff2aef;
 }
-#home__main div h1 {
+#main div h1 {
   color: #49c5f6;
   animation: fadeIn;
   animation-duration: 5s;
   text-shadow: 0.5rem 0.5rem 0.5rem #49c5f6;
   font-size: 4rem;
 }
-#home__main div h2 {
+#main div h2 {
   font-size: 2.5rem;
   color: #ff2aef;
   animation: subtitle;
@@ -102,7 +116,7 @@ img {
     text-shadow: 0 0 0.5rem #ff2aef;
   }
 }
-#home__main div img {
+#main .contenedor__logo img {
   border-bottom: solid #49c5f6 0.1rem;
   border-left: solid #49c5f6 0.1rem;
   padding: 0.5rem;
@@ -111,6 +125,7 @@ img {
 #home__footer {
   display: flex;
   margin-top: auto;
+  padding: 3rem 0;
   min-height: 5vh;
   justify-content: space-around;
   align-items: center;
@@ -122,9 +137,137 @@ img {
   color: #4e4376;
 }
 
-@media screen and (min-width: 576px) and (max-width: 640px) {
+@media screen and (min-width: 576px) and (max-width: 657px) {
   #home__cabecera .nav ul li a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #49c5f6, #ff2aef);
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #49c5f6, #ff2aef);
+}
+body::-webkit-scrollbar-track:hover, body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ff2aef;
+  border-radius: 20px;
+  border: solid 0.1rem white;
+}
+
+img {
+  max-width: 100%;
+}
+
+#main__aboutMe {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  background: linear-gradient(to bottom, #2b5876 30%, #4e4376 80%);
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1.5rem #49c5f6, -1rem -1rem 1.5rem #ff2aef, inset 1rem 1rem 1.5rem #49c5f6, inset -1rem -1rem 1.5rem #ff2aef;
+}
+#main__aboutMe .imagen {
+  display: flex;
+  justify-content: center;
+}
+#main__aboutMe .imagen .contenedor__imagen {
+  display: flex;
+  position: relative;
+  height: 30rem;
+  margin-bottom: 5rem;
+}
+#main__aboutMe .imagen .contenedor__imagen:hover .fondo {
+  transform: translate(1rem, 1rem);
+  border: solid #49c5f6;
+}
+#main__aboutMe .imagen .contenedor__imagen:hover .fondo__imagen {
+  z-index: 2;
+}
+#main__aboutMe .imagen .contenedor__imagen:hover .imagen__aboutMe {
+  border: solid #ff2aef;
+  z-index: 3;
+}
+#main__aboutMe .imagen .contenedor__imagen .imagen__aboutMe {
+  width: 25rem;
+  height: 30rem;
+  border: solid #49c5f6;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  z-index: 2;
+  transition: 0.7s;
+}
+#main__aboutMe .imagen .contenedor__imagen .fondo__imagen {
+  width: 25rem;
+  height: 30rem;
+  opacity: 0.35;
+  background-color: #49c5f6;
+  position: absolute;
+  z-index: 3;
+  border-radius: 1rem;
+  transition: 0.7s ease-in-out;
+}
+#main__aboutMe .imagen .contenedor__imagen .fondo {
+  width: 25rem;
+  height: 30rem;
+  border: solid #ff2aef;
+  border-radius: 1rem;
+  position: absolute;
+  transform: translate(2rem, 2rem);
+  z-index: 1;
+  transition: 0.7s;
+}
+#main__aboutMe .aboutMe__parrafo {
+  text-align: center;
+  padding: 5rem;
+}
+#main__aboutMe .aboutMe__parrafo h1 {
+  padding-bottom: 3rem;
+  font-size: 7.2rem;
+  background: linear-gradient(270deg, #3f5efb, #fc466b);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#main__aboutMe .aboutMe__parrafo div p {
+  background: linear-gradient(270deg, #49c5f6, white);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 992px) {
+  #main__aboutMe {
+    flex-direction: row;
+  }
+  #main__aboutMe .imagen {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  #main__aboutMe .aboutMe__parrafo {
+    margin: auto 0;
+    padding-right: 0;
+    padding-left: 10rem;
   }
 }
 

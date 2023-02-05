@@ -7,7 +7,7 @@ $color-texto: #4e4376;
     color: $color-texto;
 }
 @mixin formateo-texto-sm{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 @mixin formateo-global {
     *{
@@ -18,14 +18,38 @@ $color-texto: #4e4376;
     html{
         font-size: 62.5%;
         overflow-x: hidden;
+        
     }
     body{
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         background: linear-gradient(to right bottom, $color-principal1, $color-principal2);
+        &::-webkit-scrollbar{
+            width: .5rem;
+        }
+        &::-webkit-scrollbar-track{
+            background: linear-gradient(to bottom, $color-principal1, $color-principal2);
+        }
+        &::-webkit-scrollbar-track:hover,&::-webkit-scrollbar-track:active{
+            background: #d4d4d4;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: $color-principal2; 
+            border-radius: 20px;       
+            border: solid .1rem white;
+        }
     }
     img{
         max-width: 100%;
     }
+}
+@mixin main{
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    background: linear-gradient(to bottom, #2b5876 30%, #4e4376 80%);
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 1.5rem $color-principal1,  -1rem -1rem 1.5rem $color-principal2, inset 1rem 1rem 1.5rem $color-principal1, inset  -1rem -1rem 1.5rem $color-principal2;
 }
