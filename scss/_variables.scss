@@ -26,7 +26,7 @@ $color-texto: #4e4376;
         min-height: 100vh;
         background: linear-gradient(to right bottom, $color-principal1, $color-principal2);
         &::-webkit-scrollbar{
-            width: .5rem;
+            width: .7rem;
         }
         &::-webkit-scrollbar-track{
             background: linear-gradient(to bottom, $color-principal1, $color-principal2);
@@ -35,9 +35,9 @@ $color-texto: #4e4376;
             background: #d4d4d4;
         }
         &::-webkit-scrollbar-thumb{
-            background-color: $color-principal2; 
+            background: linear-gradient(to bottom, $color-principal1, $color-principal2);
             border-radius: 20px;       
-            border: solid .1rem white;
+            border: solid .1rem transparent;
         }
     }
     img{
