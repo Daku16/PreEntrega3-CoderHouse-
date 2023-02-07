@@ -28,26 +28,26 @@
         }
         .email{
             grid-column: 1/3;
-            width: 80%;
+            width: 95%;
         }
         .phone{
             grid-column: 1/3;
-            width: 80%;
+            width: 95%;
         }
         .message{
             grid-column: 1/3;
-            width: 80%;
+            width: 95%;
             height: 100%;
         }
         .submit-btn{
             grid-column: 1/3;
-            width: 50%;
+            width: 60%;
             background-color: $color-principal1;
             color: $color-texto;
             text-align: center;
             padding: 1.5rem;
             border: none;
-            border-radius: 10px;
+            border-radius: 1rem;
             cursor: pointer;
             margin-top: 2rem;
             &:hover{

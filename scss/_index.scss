@@ -80,7 +80,7 @@
         }
     }
     .contenedor__logo{
-        img{
+        .logo__main{
             border-bottom: solid $color-principal1 .1rem;
             border-left: solid $color-principal1 .1rem;
             padding: .5rem;
@@ -102,7 +102,7 @@
         color: $color-texto;
     }
 }
-@media screen and (min-width: 576px) and (max-width: 657px){
+@media screen and (min-width: 576px) and (max-width: 768px){
     #home__cabecera{
         .nav{
             ul{

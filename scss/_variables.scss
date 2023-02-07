@@ -53,3 +53,16 @@ $color-texto: #4e4376;
     border-radius: 2rem;
     box-shadow: 1rem 1rem 1.5rem $color-principal1,  -1rem -1rem 1.5rem $color-principal2, inset 1rem 1rem 1.5rem $color-principal1, inset  -1rem -1rem 1.5rem $color-principal2;
 }
+@mixin cartas__habilidades{
+    display: flex;
+    width: 65%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1.5rem .5rem black;
+}
+@mixin animacion__habilidades($color){
+    transition: .5s;
+    &:hover{
+        background-color: $color;
+    }
+}
