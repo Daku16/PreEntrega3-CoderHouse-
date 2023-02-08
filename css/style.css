@@ -308,7 +308,7 @@ img {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  margin-top: 2rem;
+  margin: 2rem 0;
   transition: 0.5s;
   font-size: 1.5rem;
 }
@@ -333,7 +333,7 @@ img {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  margin-top: 2rem;
+  margin: 2rem 0;
   transition: 0.5s;
   font-size: 1.5rem;
   color: white;
@@ -511,7 +511,7 @@ img {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-  margin-top: 2rem;
+  margin: 2rem 0;
   transition: 0.5s;
   font-size: 1.5rem;
 }
@@ -546,6 +546,12 @@ img {
   background-color: #454540;
   border: solid 1px #212121;
   box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
+}
+
+@media screen and (max-width: 576px) {
+  .contact {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
