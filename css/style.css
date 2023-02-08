@@ -17,6 +17,7 @@ body {
 }
 body::-webkit-scrollbar {
   width: 0.7rem;
+  background: fixed;
 }
 body::-webkit-scrollbar-track {
   background: linear-gradient(to bottom, #49c5f6, #ff2aef);
@@ -26,7 +27,7 @@ body::-webkit-scrollbar-track:hover, body::-webkit-scrollbar-track:active {
 }
 body::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #49c5f6, #ff2aef);
-  border-radius: 20px;
+  border-radius: 2rem;
   border: solid 0.1rem transparent;
 }
 
@@ -234,91 +235,6 @@ img {
     padding-left: 10rem;
   }
 }
-.contact__main {
-  justify-content: center;
-  align-items: center;
-}
-.contact__main .titulo__contact .titulo {
-  color: #ff2aef;
-}
-.contact__main .titulo__contact .parrafo {
-  color: whitesmoke;
-}
-.contact__main .contact {
-  min-width: 50rem;
-  display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
-  grid-template-rows: repeat(5, 1fr);
-  padding: 0 5rem;
-  align-items: center;
-  justify-items: center;
-}
-.contact__main .contact .name {
-  grid-column: 1/2;
-  width: 90%;
-}
-.contact__main .contact .lastName {
-  grid-column: 2/3;
-  width: 90%;
-}
-.contact__main .contact .email {
-  grid-column: 1/3;
-  width: 95%;
-}
-.contact__main .contact .phone {
-  grid-column: 1/3;
-  width: 95%;
-}
-.contact__main .contact .message {
-  grid-column: 1/3;
-  width: 95%;
-  height: 100%;
-}
-.contact__main .contact .submit-btn {
-  grid-column: 1/3;
-  width: 60%;
-  background-color: #49c5f6;
-  color: #4e4376;
-  text-align: center;
-  padding: 1.5rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: 2rem;
-}
-.contact__main .contact .submit-btn:hover {
-  opacity: 0.75;
-}
-.contact__main .contact label {
-  display: flex;
-  flex-direction: column;
-  font-size: larger;
-}
-.contact__main .contact label span {
-  color: #ff2aef;
-}
-.contact__main .contact label TEXTarea {
-  height: 5rem;
-}
-.contact__main .contact label input, .contact__main .contact label TEXTarea {
-  resize: none;
-  background-color: #212121;
-  border: solid 1px transparent;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  color: #49c5f6;
-}
-.contact__main .contact label input:hover, .contact__main .contact label TEXTarea:hover {
-  background-color: #454045;
-  border: solid 1px #212121;
-  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
-}
-.contact__main .contact label input:focus, .contact__main .contact label TEXTarea:focus {
-  background-color: #454540;
-  border: solid 1px #212121;
-  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
-}
-
 .abilities__main {
   align-items: center;
   justify-content: center;
@@ -382,6 +298,23 @@ img {
 .abilities__main .sass:hover {
   background-color: #f8a5c2;
 }
+.abilities__main .ejemplo {
+  text-decoration: none;
+  width: 20%;
+  background-color: #49c5f6;
+  color: #4e4376;
+  text-align: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+.abilities__main .ejemplo:hover {
+  opacity: 0.75;
+}
 
 @media screen and (max-width: 768px) {
   .abilities__main .carta {
@@ -391,6 +324,228 @@ img {
   .abilities__main .card__inverso {
     flex-direction: column-reverse;
   }
+}
+#home__cabecera .div__btn-back .btn-back {
+  background-color: #49c5f6;
+  color: #4e4376;
+  text-align: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #2b5876;
+  text-decoration: none;
+  padding: 1.5rem 10rem;
+}
+#home__cabecera .div__btn-back .btn-back:hover {
+  opacity: 0.75;
+}
+
+#main__example {
+  min-height: 100vh;
+  margin-top: 3.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+#main__example .example {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#main__example .example .title__example {
+  font-size: 5rem;
+  color: #ff2aef;
+  text-shadow: 0.5rem 0.5rem 1rem black;
+  margin-bottom: 0;
+}
+#main__example .example .contenedor__ejemplo {
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1.5rem black;
+  background-color: white;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main__example .example .contenedor__ejemplo .codigo {
+  font-size: 1.5rem;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  background: fixed;
+  border: none;
+}
+#main__example .example .contenedor__ejemplo .codigo::-webkit-scrollbar {
+  background: fixed;
+}
+#main__example .example .contenedor__ejemplo .codigo::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #49c5f6, #ff2aef);
+  border-radius: 2rem;
+  border: solid 0.1rem transparent;
+}
+#main__example .example .contenedor__ejemplo .animacion {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+#main__example .example .contenedor__ejemplo .animacion::after, #main__example .example .contenedor__ejemplo .animacion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #49c5f6;
+  animation: rotateA 2s linear infinite 0.5s;
+}
+#main__example .example .contenedor__ejemplo .animacion::before {
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+.btn-up {
+  color: white;
+  background-color: #2b5876;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+@keyframes rotateA {
+  0%, 25% {
+    transform: rotate(0deg);
+  }
+  50%, 75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateB {
+  0%, 25% {
+    transform: rotate(90deg);
+  }
+  50%, 75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  #main__example {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+  }
+  #main__example .example {
+    width: 70%;
+    gap: 5rem;
+  }
+  #main__example .example .contenedor__ejemplo {
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #home__cabecera .div__btn-back {
+    margin-top: 5rem;
+  }
+}
+.contact__main {
+  justify-content: center;
+  align-items: center;
+}
+.contact__main .titulo__contact .titulo {
+  color: #ff2aef;
+}
+.contact__main .titulo__contact .parrafo {
+  color: whitesmoke;
+}
+.contact__main .contact {
+  min-width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 0 5rem;
+  align-items: center;
+  justify-items: center;
+}
+.contact__main .contact .name {
+  grid-column: 1/2;
+  width: 90%;
+}
+.contact__main .contact .lastName {
+  grid-column: 2/3;
+  width: 90%;
+}
+.contact__main .contact .email {
+  grid-column: 1/3;
+  width: 95%;
+}
+.contact__main .contact .phone {
+  grid-column: 1/3;
+  width: 95%;
+}
+.contact__main .contact .message {
+  grid-column: 1/3;
+  width: 95%;
+  height: 100%;
+}
+.contact__main .contact .submit-btn {
+  grid-column: 1/3;
+  width: 60%;
+  background-color: #49c5f6;
+  color: #4e4376;
+  text-align: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+.contact__main .contact .submit-btn:hover {
+  opacity: 0.75;
+}
+.contact__main .contact label {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+.contact__main .contact label span {
+  color: #ff2aef;
+}
+.contact__main .contact label TEXTarea {
+  height: 5rem;
+}
+.contact__main .contact label input, .contact__main .contact label TEXTarea {
+  resize: none;
+  background-color: #212121;
+  border: solid 1px transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #49c5f6;
+}
+.contact__main .contact label input:hover, .contact__main .contact label TEXTarea:hover {
+  background-color: #454045;
+  border: solid 1px #212121;
+  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
+}
+.contact__main .contact label input:focus, .contact__main .contact label TEXTarea:focus {
+  background-color: #454540;
+  border: solid 1px #212121;
+  box-shadow: 0 0 4px rgba(235, 80, 255, 0.3098039216);
 }
 
 /*# sourceMappingURL=style.css.map */

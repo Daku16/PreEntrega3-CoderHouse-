@@ -46,6 +46,11 @@
     .sass{
         @include animacion__habilidades(#f8a5c2);
     }
+    .ejemplo{
+        text-decoration: none;
+        width: 20%;
+        @include btn;
+    }
 }
 @media screen and (max-width: 768px){
     .abilities__main{

@@ -27,6 +27,7 @@ $color-texto: #4e4376;
         background: linear-gradient(to right bottom, $color-principal1, $color-principal2);
         &::-webkit-scrollbar{
             width: .7rem;
+            background: fixed;
         }
         &::-webkit-scrollbar-track{
             background: linear-gradient(to bottom, $color-principal1, $color-principal2);
@@ -36,7 +37,7 @@ $color-texto: #4e4376;
         }
         &::-webkit-scrollbar-thumb{
             background: linear-gradient(to bottom, $color-principal1, $color-principal2);
-            border-radius: 20px;       
+            border-radius: 2rem;       
             border: solid .1rem transparent;
         }
     }
@@ -65,4 +66,19 @@ $color-texto: #4e4376;
     &:hover{
         background-color: $color;
     }
+}
+@mixin btn{
+    background-color: $color-principal1;
+            color: $color-texto;
+            text-align: center;
+            padding: 1.5rem;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: .5s;
+            font-size: 1.5rem;
+            &:hover{
+                opacity: 0.75;
+            }
 }
